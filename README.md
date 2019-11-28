@@ -47,3 +47,12 @@ mutation{
   }
 }
 ```
+
+Consultar las facturas del usuario conectado
+```graphql
+query{
+  getFacturas(nombre:"P", token:"f52f0aa8-db3d-447f-a304-78fadb0e9fef"){
+    concepto
+  }
+}
+```
